@@ -14,7 +14,7 @@ The dataset used was the FER2013 dataset from the Kaggle challenge on Facial Exp
 ### Model
 
 <p align="center">
-  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/model.png" width="350" />
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/model.png"  />
 </p>
 
 ### Results
