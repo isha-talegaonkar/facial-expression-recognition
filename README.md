@@ -7,8 +7,9 @@ The dataset used was the FER2013 dataset from the Kaggle challenge on Facial Exp
 
 ### Methodology
 
-![alt text](
-https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/flowchart.png)
+<p align="center">
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/flowchart.png">
+</p>
 
 ### Results
 
