@@ -5,4 +5,5 @@ In this report, a Facial Expression Recognition(FER) system using deep learning 
 ### Dataset
 The dataset used was the FER2013 dataset from the Kaggle challenge on Facial Expression Recognition. The dataset consists of 35,888 labeled images, which are divided into 3589 test and 28709 train images. The dataset consists of another 3589 private test images, on which the final test was conducted during the challenge. The FER2013 dataset contains images that vary in viewpoint, lighting, and scale. The number of images given in the dataset for every emotion is given below along with some sample images from the dataset.
 
-
+![alt text](
+https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/flowchart.png)
