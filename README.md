@@ -13,17 +13,8 @@ The dataset used was the FER2013 dataset from the Kaggle challenge on Facial Exp
 
 ### Results
 
-![alt text](
-https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/confusion_matrix.png)
-
-![alt text](
-https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/training_acc.png)
-
-![alt text](
-https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/loss.png)
-
 <p float="left">
-  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/confusion_matrix.png" width="100" />
-  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/training_acc.png" width="100" /> 
-  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/loss.png" width="100" />
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/confusion_matrix.png" width="200" />
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/training_acc.png" width="200" /> 
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/loss.png" width="200" />
 </p>
