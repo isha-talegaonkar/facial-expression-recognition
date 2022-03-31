@@ -12,4 +12,11 @@ https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Resu
 
 ### Results
 
+![alt text](
+https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/confusion_matrix.png)
 
+![alt text](
+https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/training_acc.png)
+
+![alt text](
+https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/loss.png)
