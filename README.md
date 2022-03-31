@@ -21,3 +21,9 @@ https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Resu
 
 ![alt text](
 https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/loss.png)
+
+<p float="left">
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/confusion_matrix.png" width="100" />
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/training_acc.png" width="100" /> 
+  <img src="https://github.com/isha-talegaonkar/facial-expression-recognition/blob/main/Results/loss.png" width="100" />
+</p>
