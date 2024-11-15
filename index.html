@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5f1">
+  <title>Facial Expression Recognition · Isha Talegaonkar</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script defer src="./demo.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="#top"><span class="brand-mark">✳</span> FER / 2019</a>
+      <nav aria-label="Page sections">
+        <a href="#demo">Live demo</a>
+        <a href="#research">The project</a>
+        <a href="#results">Results</a>
+      </nav>
+      <a class="repo-link" href="https://github.com/isha-talegaonkar/facial-expression-recognition" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Computer vision · Deep learning</p>
+          <h1 id="hero-title">What can a face <em>express?</em></h1>
+          <p class="hero-description">A real-time facial expression recognition project trained on FER2013. Explore the original research and try the model with your camera.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">Try the live demo <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#research">Explore the project <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-note">By Isha Talegaonkar <span aria-hidden="true">·</span> 2019</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-face"><span class="art-eye"></span><span class="art-eye"></span><span class="art-smile"></span></div>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✦</span>
+          <span class="art-caption">a little window into expression</span>
+        </div>
+      </section>
+
+      <section class="demo-section" id="demo" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Interactive demo</p><h2 id="demo-title">See the model in action</h2></div>
+          <p>Center one face inside the guide. Predictions stay in your browser.</p>
+        </div>
+        <div class="demo-grid">
+          <div class="camera-card">
+            <div class="card-topline"><span><span class="live-dot"></span> Camera preview</span><span id="camera-state">Camera off</span></div>
+            <div class="camera-stage" id="camera-stage">
+              <video id="camera" autoplay muted playsinline aria-label="Live camera preview"></video>
+              <img id="uploaded-image" alt="Selected image preview" hidden>
+              <div class="camera-placeholder" id="camera-placeholder">
+                <div class="placeholder-face">☺</div>
+                <span>Your camera preview will appear here</span>
+              </div>
+              <div class="face-guide" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <div class="camera-label">Align your face here</div>
+            </div>
+            <div class="camera-actions">
+              <button id="camera-button" class="button button-primary" type="button">Start camera</button>
+              <label class="button button-outline" for="image-upload">Try a photo</label>
+              <input id="image-upload" type="file" accept="image/*" hidden>
+            </div>
+            <p class="camera-help">Camera access requires permission. A photo works too. Images are processed locally and are not uploaded.</p>
+          </div>
+
+          <div class="prediction-card">
+            <div class="card-topline"><span>Expression probabilities</span><span class="model-pill">CNN · 7 classes</span></div>
+            <div class="prediction-lead">
+              <span class="prediction-icon" id="prediction-icon">✳</span>
+              <div><span class="mini-label">Current prediction</span><strong id="prediction-name">Waiting for input</strong><span id="prediction-confidence">Start your camera or choose a photo</span></div>
+            </div>
+            <div class="prediction-bars" id="prediction-bars" aria-label="Expression probabilities"></div>
+            <p class="prediction-disclaimer">A research demonstration, not a reliable measure of a person's feelings. Lighting, pose, and context affect predictions.</p>
+          </div>
+        </div>
+        <p class="demo-status" role="status" id="demo-status">Model will load when you start the demo.</p>
+      </section>
+
+      <section class="research-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / Behind the project</p><h2 id="research-title">From pixels to patterns</h2></div><p>A computer vision study of seven facial expression categories.</p></div>
+        <div class="research-grid">
+          <article class="info-card"><span class="info-icon peach">01</span><h3>The question</h3><p>Can a convolutional neural network classify facial expressions in real time from a webcam image?</p></article>
+          <article class="info-card"><span class="info-icon lilac">02</span><h3>The approach</h3><p>Detect and crop a face, convert it to a 48 × 48 grayscale image, then classify it with a CNN trained on FER2013.</p></article>
+          <article class="info-card"><span class="info-icon mint">03</span><h3>The output</h3><p>Probabilities across angry, disgust, fear, happy, sad, surprise, and neutral. The strongest class is shown above.</p></article>
+        </div>
+      </section>
+
+      <section class="results-section" id="results" aria-labelledby="results-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / What we found</p><h2 id="results-title">A snapshot of the results</h2></div><p>Figures from the original project dashboard.</p></div>
+        <div class="metric-row"><div><strong>79.89%</strong><span>Training accuracy</span></div><div><strong>60.12%</strong><span>Testing accuracy</span></div><div><strong>89.81%</strong><span>Reported validation accuracy</span></div></div>
+        <div class="figure-grid">
+          <figure><img src="./assets/confusion_matrix.png" alt="Confusion matrix from the FER project"><figcaption>Confusion matrix</figcaption></figure>
+          <figure><img src="./assets/acc.png" alt="Model accuracy across training epochs"><figcaption>Accuracy over training</figcaption></figure>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>Facial Expression Recognition · Isha Talegaonkar</span><a href="https://github.com/isha-talegaonkar/facial-expression-recognition" target="_blank" rel="noopener">View source on GitHub ↗</a></footer>
+  </div>
+  <canvas id="sample-canvas" width="48" height="48" hidden></canvas>
+</body>
+</html>
